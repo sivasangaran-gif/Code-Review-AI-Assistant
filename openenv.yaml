@@ -1,0 +1,22 @@
+name: "AICodeReviewAssistantEnv"
+version: "1.0.0"
+description: "A production-grade code review environment simulating real PR cycles."
+metadata:
+  tasks: 3
+  category: "Software Engineering"
+  render: true
+
+entrypoints:
+  server: "server.app:app"
+  agent: "inference.py"
+
+tasks:
+  - id: "task_1"
+    name: "Missing ZeroDivisionError"
+    difficulty: "easy"
+  - id: "task_2"
+    name: "N+1 Query Detection"
+    difficulty: "medium"
+  - id: "task_3"
+    name: "IDOR and Security Audit"
+    difficulty: "hard"
